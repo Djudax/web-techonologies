@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+        }
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+        .yellow { background-color: yellow; }
+        .beige { background-color: beige; }
+        .cyan { background-color: cyan; }
+        .yellow-mondrian { background-color: #fffa69; }
+        .blue-mondrian { background-color: #074481; }
+        .red-mondrian { background-color: #ff5b2d; }
+        .black { background-color: #000000; }
+        .white { background-color: #ffffff; }
+    </style>
+    <title>Завдання з таблицями</title>
+</head>
+<body>
+<!-- Перша частина: кольорова таблиця -->
+<h2>Частина 1: Таблиця зі зразком кольорів</h2>
+<table>
+    <tr>
+        <td colspan="2" class="cyan"></td>
+        <td colspan="2" class="beige"></td>
+    </tr>
+    <tr>
+        <td class="beige"></td>
+        <td class="cyan"></td>
+        <td class="cyan"></td>
+        <td class="beige"></td>
+    </tr>
+    <tr>
+        <td class="beige"></td>
+        <td class="red"></td>
+        <td class="blue"></td>
+        <td class="beige"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="cyan"></td>
+        <td colspan="2" class="beige"></td>
+    </tr>
+    <tr>
+        <td class="cyan"></td>
+        <td class="green"></td>
+        <td class="yellow"></td>
+        <td class="cyan"></td>
+    </tr>
+</table>
+
+<!-- Друга частина: картина Піта Мондріана -->
+<h2>Частина 2: Картина Піта Мондріана</h2>
+<table>
+    <tr>
+        <td colspan="3" rowspan="3" class="red-mondrian"></td>
+        <td colspan="2" class="white"></td>
+        <td colspan="2" rowspan="2" class="yellow-mondrian"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="white"></td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2" class="white"></td>
+        <td colspan="2" class="blue-mondrian"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="black"></td>
+    </tr>
+</table>
+</body>
+</html>

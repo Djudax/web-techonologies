@@ -1,0 +1,62 @@
+/* 4.1 - CSS для тегів span всередині p з класом .text-background */
+.text-background span {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 4.2 - CSS для тегів span в середині div та p з класом .text-background */
+div .text-background span {
+    background-color: yellow;
+}
+
+/* 4.3 - CSS для тегів span в середині інших span */
+span span {
+    background-color: grey;
+    text-decoration: line-through;
+}
+
+/* 4.4 - CSS для тегів span в середині інших span в нумерованому списку */
+ol li span span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* 4.5 - CSS для абзаців в section на першому рівні вкладеності */
+section > p {
+    text-shadow: 3px 3px 5px red;
+    text-indent: 50px;
+}
+
+/* 4.6 - CSS для ul, що є безпосередньо в li */
+li > ul {
+}
+
+li > ul {
+    list-style-image: url('bullet.png');
+}
+
+/* 4.7 - CSS для абзаців з класом .text-background в середині div */
+div > .text-background {
+    word-spacing: 50px;
+}
+
+/* 4.8 - CSS для абзаців в середині div з класом .text-bold */
+.text-bold > p {
+    font-weight: bold;
+}
+
+/* 4.9 - CSS для абзаців в section, який є прямим нащадком div з класом .text-bold */
+.text-bold > section > p {
+    line-height: 45px;
+}
+
+/* 4.10 - CSS для абзаців, що йдуть після img */
+img + p {
+    background-color: brown;
+}
+
+/* 4.11 - CSS для абзаців після section */
+section ~ p {
+    color: red;
+}
