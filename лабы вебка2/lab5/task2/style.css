@@ -1,0 +1,76 @@
+/* Встановлення ширини і висоти для сторінки */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Таблиця займає всю ширину і висоту */
+table {
+    width: 100vw;  /* Займає 100% ширини вікна */
+    height: 100vh; /* Займає 100% висоти вікна */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Висота рядків налаштовується відповідно до висоти сторінки */
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    font-size: 18px;
+}
+
+/* Стиль для заголовку таблиці */
+thead th {
+    background-color: #bb4a4a;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Стиль для першого стовпця */
+tbody td:first-child {
+    background-color: #e67373;
+    font-weight: bold;
+    color: white;
+}
+
+/* Чергування кольорів рядків і градієнт стовпців */
+tbody tr:nth-child(odd) {
+    background-color: #f2b0b0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9d1d1;
+}
+
+tbody td:nth-child(2) {
+    background-color: #f2b0b0;
+}
+
+tbody td:nth-child(3) {
+    background-color: #e67373;
+}
+
+tbody td:nth-child(4) {
+    background-color: #d94d4d;
+}
+
+tbody td:nth-child(5) {
+    background-color: #bb4a4a;
+    color: white;
+}
+
+/* Додатковий стиль для мінусів і плюсів */
+td {
+    font-size: 22px;
+}
+
+/* Додатковий стиль для висоти рядків */
+tr {
+    height: calc(100vh / 6); /* 5 рядків + заголовок */
+}
