@@ -1,0 +1,50 @@
+/* 1.2 Універсальний селектор */
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* 1.3 Стилі для абзаців і блоків */
+p {
+    color: green;
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+}
+
+/* 1.4 Червоний колір для 1-го і 3-го абзаців */
+.red {
+    color: red;
+}
+
+/* 1.5 Заборона перенесення рядка для 1-го абзацу */
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* 1.6 Ідентифікатор для 2-го абзацу */
+#italic-bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* 1.7 Тінь для тексту */
+.shadow {
+    text-shadow: 5px -5px 3px red; /* Виберіть колір тіні */
+}
+
+/* 1.8 Стилі для 1-го блочного елемента */
+.block-one {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
+
+/* 1.9 Стилі для 2-го блочного елемента */
+.block-two {
+    letter-spacing: 30px;
+    word-spacing: 50px;
+}

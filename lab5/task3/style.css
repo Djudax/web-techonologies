@@ -1,0 +1,34 @@
+/* Загальні стилі для тіла */
+body {
+    font-family: 'Arial', sans-serif; /* Вибір шрифту */
+    background-color: #f0f8ff; /* Світлий фон */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Висота на всю сторінку */
+}
+
+/* Контейнер для карти */
+.map-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Напівпрозорий білий фон */
+    border-radius: 10px; /* Закруглені кути */
+    padding: 20px; /* Внутрішній відступ */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Тінь для ефекту підняття */
+}
+
+/* Стиль заголовка */
+h1 {
+    font-size: 32px; /* Розмір шрифту заголовка */
+    color: #2c3e50; /* Темний колір для заголовка */
+    margin-bottom: 20px; /* Відступ знизу */
+}
+
+/* Стиль зображення */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #2c3e50; /* Рамка для зображення */
+    border-radius: 5px; /* Закруглені кути зображення */
+}

@@ -1,0 +1,287 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+li{
+    margin: 10px;
+    float: left;
+}
+li a{
+    display: inline-block;
+    padding: 10px;
+    background: #EFCDB8;
+}
+img{
+    float: left;
+    margin: 10px;
+}
+.task1 img{
+    width: 200px;
+    max-height: 250px;
+}
+.right-contain{
+    float: right;
+    object-fit: contain;
+}
+.left-contain{
+    float: left;
+    object-fit: contain;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 1140px;
+    align-content: center;
+}
+.task1 .content{
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 5px dotted red;
+}
+.task2 .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9, .block10, .block11, .block12{
+    flex-basis: 25%;
+    padding: 10px;
+    border: solid 5px;
+}
+.block1{
+    border-color: green;
+    border-radius: 50px;
+}
+.block2{
+    border-color: green;
+    border-radius: 75px 0 ;
+}
+.block3{
+    border-color: green;
+    border-radius: 25px 150px / 35px 175px;
+}
+.block4{
+    border-color: darkgreen lawngreen;
+    border-width: 25px;
+    border-radius: 25px / 50px;
+}
+.block5{
+    border-color: lawngreen darkgreen;
+    border-width: 25px;
+    border-radius: 175px 25px / 50px;
+}
+.block6{
+    border-color: lawngreen lawngreen lawngreen darkgreen;
+    border-width: 25px;
+    border-bottom-right-radius: 100%;
+}
+.block7{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("Pictures/border.png") 20%;
+}
+.block8{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("Pictures/border.png") 20% round;
+}
+.block9{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("Pictures/border.png") 30 round;
+}
+.block10{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("Pictures/circle.png") 75 stretch;
+}
+.block11{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("Pictures/circle.png") 40 round;
+}
+.block12{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("Pictures/circle.png") 45 stretch;
+}
+.block13, .block14, .block15, .block16{
+    text-align: center;
+    background-color: #ff4d4d;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 20px;
+}
+.block13{
+    background-color: darkred;
+}
+.block14{
+    background-color: #ff6666;
+}
+.block15-16{
+    column-count: 2;
+}
+p{
+    margin: 5px 35px;
+    border: dotted #EFCDB8;
+    padding: 5px;
+}
+.task3{
+    color: white;
+}
+.task4 .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-count: 3;
+    column-gap: 35px;
+}
+.task4 .content img{
+    margin: auto;
+}
+.task4 ul.content li{
+    width: 250px;
+    height: 300px;
+    border: 1px solid green;
+    display: grid;
+    margin: 10px 0;
+    align-items: center;
+    text-align: center;
+}
+h2{
+    margin-left: 10px;
+}
+.shadow1{
+    box-shadow: -5px -5px 5px green;
+}
+.shadow2{
+    box-shadow: 0 0 5px 5px green;
+}
+.shadow3{
+    box-shadow: 5px 5px 5px green;
+}
+.shadow4{
+    box-shadow: 0 0 5px 1px green;
+}
+.shadow5{
+    box-shadow: 5px 0 blue, 0 5px yellow, -5px 0 red, 0 -5px green;
+}
+.shadow6{
+    box-shadow: 0 -5px 5px yellow, 0 5px 5px green;
+}
+.task5 .content{
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 3;
+}
+.box1, .box2, .box3, .box4, .box5{
+    flex-basis: 30%;
+    margin: 10px 5px;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box1 img, .box2 img, .box3 img, .box4 img, .box5 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.box1{
+    background: linear-gradient(45deg, green, yellow, blue, orange);
+}
+.box2{
+    background-color: #eee;
+    background-image: linear-gradient(45deg, green 20%, transparent 20% 25%, transparent 75%, orange 75%, blue),
+    linear-gradient(45deg, yellow 20%, transparent 20% 25%, transparent 75%, purple 75%, orange);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+.box3{
+    background: repeating-linear-gradient(
+    90deg,
+    white,
+    green 50%,
+    transparent 50% 100%
+    ),
+    repeating-linear-gradient(
+    90deg,
+    transparent 0 50%,
+    blue 50%,
+    yellow
+    );
+    background-size: 100px auto;
+}
+.box4{
+    background:
+            linear-gradient(
+                    to top left,
+                    yellow 0 35%, transparent 35% 100%
+            ),
+            linear-gradient(
+                to top right,
+                green 0 25%,
+                transparent 25% 100%
+            ),
+            radial-gradient(
+            white 50%,
+            transparent 100%
+            ),
+            linear-gradient(
+                    to bottom right,
+                    darkgoldenrod 0 35%,
+                    transparent 35% 100%
+            ),
+            linear-gradient(
+                    to bottom left,
+                    blue 0 35%,
+                    transparent 35% 100%
+            );
+}
+.box5{
+    background: repeating-linear-gradient(
+            190deg,
+            rgb(255 0 0 / 50%) 40px,
+            rgb(255 153 0 / 50%) 80px,
+            rgb(255 255 0 / 50%) 120px,
+            rgb(0 255 0 / 50%) 160px,
+            rgb(0 0 255 / 50%) 200px,
+            rgb(75 0 130 / 50%) 240px,
+            rgb(238 130 238 / 50%) 280px,
+            rgb(255 0 0 / 50%) 300px
+    ),
+    repeating-linear-gradient(
+            -190deg,
+            rgb(255 0 0 / 50%) 30px,
+            rgb(255 153 0 / 50%) 60px,
+            rgb(255 255 0 / 50%) 90px,
+            rgb(0 255 0 / 50%) 120px,
+            rgb(0 0 255 / 50%) 150px,
+            rgb(75 0 130 / 50%) 180px,
+            rgb(238 130 238 / 50%) 210px,
+            rgb(255 0 0 / 50%) 230px
+    ),
+    repeating-linear-gradient(
+            23deg,
+            red 50px,
+            orange 100px,
+            yellow 150px,
+            green 200px,
+            blue 250px,
+            indigo 300px,
+            violet 350px,
+            red 370px
+    );
+}

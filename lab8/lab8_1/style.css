@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.weather-app {
+    width: 50%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.city {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.condition {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.temp {
+    font-size: 36px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.temp img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.details {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.5;
+    margin-right: 50px;
+}
+
+/* Forecast styling */
+.forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.day-name {
+    font-size: 16px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.temp-range {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column; /* Розміщуємо елементи вертикально */
+    align-items: center; /* Центруємо текст по горизонталі */
+    margin-right: 10px;
+}
+
+.high-temp{
+    font-weight: bold;
+}
+.low-temp {
+    display: block; /* Робимо елементи блочними для правильного розташування */
+    margin: 2px 0; /* Відступи між температурами */
+    font-weight: normal;
+}
+
+.pollen {
+    font-size: 12px;
+    color: #888;
+}
