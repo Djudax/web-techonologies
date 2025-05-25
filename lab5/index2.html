@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>Світлофор</title>
+    <style>
+        #trafficLight {
+            width: 100px;
+            margin: 50px auto;
+            background: #333;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .light {
+            width: 60px;
+            height: 60px;
+            margin: 10px auto;
+            border-radius: 50%;
+            background: #111;
+            transition: background 0.5s;
+        }
+
+        .red.active { background: red; }
+        .yellow.active { background: yellow; }
+        .green.active { background: green; }
+
+        #status {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        button {
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="trafficLight">
+    <div id="red" class="light red"></div>
+    <div id="yellow" class="light yellow"></div>
+    <div id="green" class="light green"></div>
+</div>
+<div id="status">Стан: —</div>
+
+<div style="text-align: center;">
+    <button onclick="nextState()">Наступний стан</button>
+    <button onclick="setDurations()">Змінити час</button>
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>

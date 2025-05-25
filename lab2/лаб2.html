@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота — JavaScript</title>
+</head>
+<body>
+<h1>Результати — дивись у консолі (F12 → Console)</h1>
+
+<script>
+  // 1. Оператори порівняння
+
+  function findMinMax(arr) {
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+    return { min, max };
+  }
+
+  function compareObjects(obj1, obj2) {
+    return obj1.name === obj2.name && obj1.age === obj2.age;
+  }
+
+  // 2. Логічні оператори
+
+  function isInRange(num, min, max) {
+    return num >= min && num <= max;
+  }
+
+  function toggleFlag(flag) {
+    return !flag;
+  }
+
+  // 3. Умовні розгалуження
+
+  function getGradeText(score) {
+    if (score >= 90) return "відмінно";
+    else if (score >= 75) return "добре";
+    else if (score >= 60) return "задовільно";
+    else return "незадовільно";
+  }
+
+  function getSeason(month) {
+    if (month >= 3 && month <= 5) return "Весна";
+    else if (month >= 6 && month <= 8) return "Літо";
+    else if (month >= 9 && month <= 11) return "Осінь";
+    else return "Зима";
+  }
+
+  function getSeasonTernary(month) {
+    return (month >= 3 && month <= 5) ? "Весна" :
+            (month >= 6 && month <= 8) ? "Літо" :
+                    (month >= 9 && month <= 11) ? "Осінь" : "Зима";
+  }
+
+  // Тестування функцій у консолі
+  console.log("1. Min/Max:", findMinMax([4, 9, 1, 7, 3]));
+
+  const obj1 = { name: "Іра", age: 20 };
+  const obj2 = { name: "Іра", age: 20 };
+  const obj3 = { name: "Оля", age: 21 };
+
+  console.log("2. Compare obj1 & obj2:", compareObjects(obj1, obj2));
+  console.log("3. Compare obj1 & obj3:", compareObjects(obj1, obj3));
+
+  console.log("4. Is 5 in range 1-10:", isInRange(5, 1, 10));
+  console.log("5. Toggle false:", toggleFlag(false));
+
+  console.log("6. Grade 88:", getGradeText(88));
+  console.log("7. Season for 12:", getSeason(12));
+  console.log("8. Season ternary for 4:", getSeasonTernary(4));
+</script>
+</body>
+</html>

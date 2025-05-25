@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+      <html lang="uk">
+      <head>
+      <meta charset="UTF-8" />
+      <title>Лампочка</title>
+  <style>
+    .lamp {
+      width: 100px;
+      height: 150px;
+      margin: 20px auto;
+      background: gray;
+      border-radius: 50% 50% 40% 40%;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    .on {
+      background: yellow;
+      box-shadow: 0 0 30px yellow;
+    }
+    .dim {
+      background: #ffff99;
+      box-shadow: 0 0 10px #ffff99;
+    }
+  </style>
+</head>
+<body>
+<h2>Керування лампочкою</h2>
+<select id="lampType">
+  <option value="regular">Звичайна</option>
+  <option value="eco">Енергозберігаюча</option>
+  <option value="led">Світлодіодна</option>
+</select>
+<button onclick="toggleLamp()">Вкл/Викл</button>
+<button onclick="setBrightness()">Яскравість</button>
+<div id="lamp" class="lamp"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

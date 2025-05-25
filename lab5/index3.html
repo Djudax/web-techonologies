@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Дата та Час</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 40px; }
+
+        #clock {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .blink {
+            opacity: 1;
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        #calendar { margin: 20px 0; }
+        table { margin: 0 auto; border-collapse: collapse; }
+        td, th { border: 1px solid #ccc; padding: 5px 10px; width: 40px; height: 40px; }
+
+        #countdown, #birthdayDiff { margin-top: 20px; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+<div id="clock"></div>
+
+<hr>
+
+<h3>Таймер зворотного відліку</h3>
+<input type="datetime-local" id="endTime">
+<button onclick="startCountdown()">Пуск</button>
+<div id="countdown">---</div>
+
+<hr>
+
+<h3>Календар</h3>
+<input type="month" id="calendarMonth" onchange="renderCalendar()">
+<div id="calendar"></div>
+
+<hr>
+
+<h3>Розрахунок до дня народження</h3>
+<input type="date" id="birthday">
+<button onclick="calculateBirthday()">Порахувати</button>
+<div id="birthdayDiff">---</div>
+
+<script src="script3.js"></script>
+</body>
+</html>
