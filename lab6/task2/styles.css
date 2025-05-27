@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background: #28a745;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #218838;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease, border 0.3s ease;
+}
+
+li.completed {
+    border: 2px solid green;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+li.completed span::before {
+    content: "✔ ";
+    color: green;
+    font-weight: bold;
+}
+
+li.removing {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actions button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s ease;
+}
+
+.actions button:hover {
+    background: #0056b3;
+}
+
+.actions button.complete {
+    background: #28a745;
+}
+
+.actions button.complete:hover {
+    background: #1e7e34;
+}
+
+.actions button.delete {
+    background: #dc3545;
+}
+
+.actions button.delete:hover {
+    background: #c82333;
+}
+
+@media (max-width: 500px) {
+    form {
+        flex-direction: column;
+    }
+    .actions {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

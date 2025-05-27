@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список товарів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Список товарів</h1>
+    <div class="total">Загальна вартість: 0₴</div>
+</header>
+
+<div class="controls">
+    <button type="button" id="addProductBtn">Додати новий товар</button>
+</div>
+
+<div class="filters"></div>
+
+<ul class="product-list"></ul>
+
+<div class="modal" id="productModal">
+    <form class="modal-content" id="productForm">
+        <input type="hidden" name="id">
+        <input type="text" name="name" placeholder="Назва товару" required>
+        <input type="number" name="price" placeholder="Ціна товару" min="1" required>
+        <select name="category" required>
+            <option value="">Оберіть категорію</option>
+            <option>Електроніка</option>
+            <option>Одяг</option>
+            <option>Книги</option>
+        </select>
+        <input type="url" name="image" placeholder="URL зображення" required>
+        <button type="submit">Зберегти</button>
+    </form>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
